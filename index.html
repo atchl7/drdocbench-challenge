@@ -45,7 +45,7 @@
         <h1 id="challenge-title">Dr.DocBench Challenge</h1>
         <p class="challenge-subtitle">Expert-level document parsing under real difficulty</p>
         <p class="challenge-location">Co-located with EMNLP 2026 - Budapest, Hungary</p>
-        <p class="challenge-summary">The challenge evaluates structured document extraction on difficult, expert-domain content where modern parsing systems still struggle.</p>
+        <p class="challenge-summary">Built on 2077AI’s Dr.DocBench, this challenge tests expert-level document parsing across 52 BISAC domains where state-of-the-art systems still struggle.</p>
         <div class="hero-actions" aria-label="Challenge actions">
           <a class="btn btn-primary" href="#tracks">Explore the challenge</a>
           <a class="btn btn-secondary" href="#timeline">View timeline</a>
@@ -74,7 +74,7 @@
     <section id="overview" class="section-intro">
       <p class="section-kicker">Why this challenge</p>
       <h2>Expert-Level Document Parsing</h2>
-      <p>Dr.DocBench is a difficulty-aware benchmark for expert-level document parsing, built from roughly 4,500 annotated pages across 52 subject domains. It targets difficult content such as chemistry notation, dense tables, musical scores, and long, structurally complex documents.</p>
+      <p> The Dr.DocBench Challenge is based on the Dr.DocBench research benchmark developed by 2077AI and research collaborators. Unlike conventional document-parsing benchmarks that focus on common document genres, Dr.DocBench targets difficult, expert-level content selected specifically from documents where multiple state-of-the-art parsing systems disagree or fail.</p>
       <div class="stat-grid" aria-label="Dr.DocBench dataset statistics">
         <article class="stat-item"><strong>~4,500</strong><span>annotated pages</span></article>
         <article class="stat-item"><strong>52</strong><span>subject domains</span></article>
@@ -268,24 +268,52 @@
     </section>
 
     <section id="leaderboard">
-      <div class="section-heading">
-        <p class="section-kicker">Results</p>
-        <h2>Challenge Leaderboard</h2>
-        <p>EvalAI will provide a public validation leaderboard and a private test-phase leaderboard. Display details are TBA.</p>
+  <div class="section-heading">
+    <p class="section-kicker">Results</p>
+    <h2>Challenge Leaderboard</h2>
+    <p>
+      EvalAI will provide a public validation leaderboard and a private test-phase leaderboard.
+    </p>
+  </div>
+
+  <div class="leaderboard-stack">
+    <article class="leaderboard-card">
+      <div class="leaderboard-header">
+        <div>
+          <span>Official task</span>
+          <h3>Expert-Level Document Parsing</h3>
+        </div>
+        <span class="status-badge status-muted">Coming soon</span>
       </div>
-      <div class="leaderboard-stack">
-        <article class="leaderboard-card">
-          <div class="leaderboard-header"><div><span>Track 2</span><h3>Long-Document Robustness</h3></div><span class="status-badge status-muted">TBA</span></div>
-          <div class="table-scroll" tabindex="0" aria-label="Scrollable Track 2 leaderboard">
-            <table>
-              <caption>Track 2 leaderboard</caption>
-              <thead><tr><th>Rank</th><th>Team</th><th>Final Score</th></tr></thead>
-              <tbody><tr class="empty-row"><td colspan="3">TBA</td></tr></tbody>
-            </table>
-          </div>
-        </article>
+
+      <div
+        class="table-scroll"
+        tabindex="0"
+        aria-label="Scrollable Dr.DocBench challenge leaderboard"
+      >
+        <table>
+          <caption>Dr.DocBench Challenge leaderboard</caption>
+          <thead>
+            <tr>
+              <th>Rank</th>
+              <th>Team</th>
+              <th>Text ED</th>
+              <th>Table TEDS</th>
+              <th>Formula CDM</th>
+              <th>Reading Order</th>
+              <th>Overall</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="empty-row">
+              <td colspan="7">Leaderboard coming soon</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
-    </section>
+    </article>
+  </div>
+</section>
 
     <section id="rules">
       <div class="section-heading">
