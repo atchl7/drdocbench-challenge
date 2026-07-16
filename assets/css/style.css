@@ -1313,3 +1313,62 @@ th {
     transition-duration: 0.01ms !important;
   }
 }
+.task-section {
+  display: grid;
+  grid-template-columns: minmax(240px, 0.8fr) minmax(0, 1.4fr);
+  gap: clamp(2.5rem, 7vw, 7rem);
+  align-items: start;
+  padding-block: clamp(4rem, 8vw, 7rem);
+  border-top: 1px solid var(--border-color, #d9d4ca);
+}
+
+.task-label h2 {
+  margin: 0.75rem 0 0;
+  max-width: 12ch;
+}
+
+.task-details {
+  max-width: 720px;
+}
+
+.task-intro {
+  margin: 0 0 2rem;
+  font-size: clamp(1.2rem, 2vw, 1.55rem);
+  line-height: 1.5;
+}
+
+.task-points {
+  display: grid;
+  gap: 1.25rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.task-points li {
+  position: relative;
+  padding-left: 1.5rem;
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+.task-points li::before {
+  position: absolute;
+  top: 0.7em;
+  left: 0;
+  width: 0.45rem;
+  height: 0.45rem;
+  background: var(--accent-color, #48416f);
+  content: "";
+}
+
+@media (max-width: 760px) {
+  .task-section {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .task-label h2 {
+    max-width: none;
+  }
+}
