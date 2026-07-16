@@ -1324,8 +1324,7 @@ th {
 }
 
 .task-label {
-  position: sticky;
-  top: 104px;
+  position: static;
 }
 
 .task-title-panel {
